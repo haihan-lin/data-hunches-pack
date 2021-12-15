@@ -1,6 +1,6 @@
 {
   "name": "data-hunches-pack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package that output simple charts that support data hunches",
   "main": "dist/data-hunches-pack.cjs.js",
   "module": "dist/data-hunches-pack.esm.js",
