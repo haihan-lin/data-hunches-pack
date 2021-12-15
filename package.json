@@ -1,10 +1,14 @@
 {
   "name": "data-hunches-pack",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A package that output simple charts that support data hunches",
+  "main": "dist/data-hunches-pack.cjs.js",
+  "module": "dist/data-hunches-pack.esm.js",
+  "browser": "dist/data-hunches-pack.umd.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "test": "node test/spec",
+    "pretest": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,17 @@
   "bugs": {
     "url": "https://github.com/haihan-lin/data-hunches-pack/issues"
   },
-  "homepage": "https://github.com/haihan-lin/data-hunches-pack#readme"
+  "homepage": "https://github.com/haihan-lin/data-hunches-pack#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "rollup": "^2.61.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "files": [
+    "src",
+    "dist"
+  ]
 }
